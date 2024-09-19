@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Portfolio</a>
+            <div>
+                <a href="about.html" class="mx-2">About</a>
+                <a href="projects.html" class="mx-2">Projects</a>
+                <a href="blog.html" class="mx-2">Blog</a>
+                <a href="contact.html" class="mx-2">Contact</a>
+                <button id="darkModeToggle" class="ml-4">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Thank You!</h1>
+                <p class="text-xl mb-8">Your message has been received. We'll get back to you soon.</p>
+                <p class="text-lg">Redirecting to homepage in <span id="countdown">5</span> seconds...</p>
+            </div>
+        </div>
+
+        <script>
+            let countdown = 5;
+            const countdownElement = document.getElementById('countdown');
+
+            const timer = setInterval(() => {
+                countdown--;
+                countdownElement.textContent = countdown;
+
+                if (countdown <= 0) {
+                    clearInterval(timer);
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        </script>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 fixed bottom-0 w-full">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
