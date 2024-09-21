@@ -31,29 +31,96 @@
             <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
             
             <!-- Card 1 - Left aligned -->
-            <div class="flex flex-col md:flex-row items-center mb-16 group hover:bg-white hover:shadow-xl transition duration-300 rounded-lg p-6">
-                <img src="path/to/your/image1.jpg" alt="Profile Picture" class="w-64 h-64 object-cover rounded-full mb-6 md:mb-0 md:mr-8 transform group-hover:scale-105 transition duration-300">
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-blue-800 to-purple-700 shadow-xl rounded-lg p-6 mb-24 transform hover:scale-105 transition-all duration-300">
+                <img src="images/about/aditya.png" alt="Profile Picture" class="w-64 h-64 object-cover rounded-full mb-6 md:mb-0 md:mr-8">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
-                    <p class="text-gray-600 leading-relaxed">I'm a passionate developer with a keen interest in creating beautiful and functional web applications. With years of experience in various technologies, I strive to bring innovative solutions to complex problems.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Who I Am</h3>
+                    <p class="text-white leading-relaxed">I'm a passionate developer with a keen interest in creating beautiful and functional web applications. With years of experience in various technologies, I strive to bring innovative solutions to complex problems.</p>
                 </div>
             </div>
 
-            <!-- Card 2 - Right aligned -->
-            <div class="flex flex-col md:flex-row-reverse items-center mb-16 group hover:bg-white hover:shadow-xl transition duration-300 rounded-lg p-6">
-                <img src="path/to/your/image2.jpg" alt="Skills" class="w-64 h-64 object-cover rounded-full mb-6 md:mb-0 md:ml-8 transform group-hover:scale-105 transition duration-300">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">My Skills</h3>
-                    <p class="text-gray-600 leading-relaxed">I specialize in front-end development with expertise in HTML, CSS, JavaScript, and modern frameworks like React. I'm also proficient in back-end technologies and always eager to learn more.</p>
+            <!-- Card 2 - Interactive skill showcase -->
+            <div class="flex flex-col md:flex-row mb-16 bg-gradient-to-r from-blue-800 to-purple-700 shadow-xl rounded-lg p-6 overflow-hidden">
+                <div class="w-full md:w-1/2 pr-4 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-white flex items-center">
+                        <i class="fas fa-code mr-2"></i>Technical Skills
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-white">
+                            <i class="fab fa-python mr-2"></i>Python
+                            <div class="ml-auto w-24 bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fab fa-js mr-2"></i>JavaScript
+                            <div class="ml-auto w-24 bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fab fa-react mr-2"></i>React
+                            <div class="ml-auto w-24 bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fab fa-node mr-2"></i>Node.js
+                            <div class="ml-auto w-24 bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-green-500 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fas fa-database mr-2"></i>SQL
+                            <div class="ml-auto w-24 bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-500 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 pl-4 mt-4 md:mt-0 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-white flex items-center">
+                        <i class="fas fa-brain mr-2"></i>Soft Skills
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-white">
+                            <i class="fas fa-puzzle-piece mr-2"></i>Problem Solving
+                            <span class="ml-auto text-yellow-300">★★★★★</span>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fas fa-users mr-2"></i>Team Collaboration
+                            <span class="ml-auto text-yellow-300">★★★★☆</span>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fas fa-tasks mr-2"></i>Project Management
+                            <span class="ml-auto text-yellow-300">★★★★☆</span>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fas fa-comments mr-2"></i>Communication
+                            <span class="ml-auto text-yellow-300">★★★★★</span>
+                        </li>
+                        <li class="flex items-center text-white">
+                            <i class="fas fa-sync-alt mr-2"></i>Adaptability
+                            <span class="ml-auto text-yellow-300">★★★★☆</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Card 3 - Left aligned -->
-            <div class="flex flex-col md:flex-row items-center group hover:bg-white hover:shadow-xl transition duration-300 rounded-lg p-6 mb-24">
-                <img src="path/to/your/image3.jpg" alt="Hobbies" class="w-64 h-64 object-cover rounded-full mb-6 md:mb-0 md:mr-8 transform group-hover:scale-105 transition duration-300">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">My Interests</h3>
-                    <p class="text-gray-600 leading-relaxed">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in maintaining a healthy work-life balance.</p>
+            <div class="flex flex-col md:flex-row items-center bg-gradient-to-r from-blue-800 to-purple-700 shadow-xl rounded-lg p-6 mb-24 transform hover:scale-105 transition-all duration-300">
+                <img src="path/to/your/image3.jpg" alt="Hobbies" class="w-64 h-64 object-cover rounded-full mb-6 md:mb-0 md:mr-8 border-4 border-white shadow-lg">
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-bold mb-4 text-white">Beyond the Code: My Passions</h3>
+                    <p class="text-white leading-relaxed">When I'm not immersed in lines of code, you'll find me:</p>
+                    <ul class="text-white list-disc list-inside space-y-2">
+                        <li>Tinkering with cutting-edge tech gadgets 🚀</li>
+                        <li>Contributing to open-source projects that make a difference 🌍</li>
+                        <li>Conquering hiking trails and capturing breathtaking vistas 🏞️</li>
+                        <li>Mastering the art of pour-over coffee ☕</li>
+                        <li>Engaging in intense board game nights with friends 🎲</li>
+                    </ul>
+                    <p class="text-white italic">Because life's too short to just stare at screens – balance is key! 🔑</p>
                 </div>
             </div>
         </section>
@@ -61,7 +128,7 @@
 
     <footer class="bg-gray-900 text-white py-6 fixed bottom-0 w-full">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Aditya. All rights reserved.</p>
         </div>
     </footer>
 
